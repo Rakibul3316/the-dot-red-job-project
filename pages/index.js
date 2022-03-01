@@ -11,12 +11,12 @@ export default function Home() {
       </Head>
 
       <ul>
-        <li>
-          <Link href="/Ecommerce">
+        <li className='text-orange-500'>
+          <Link href="/Ecommerce" >
             <a>e-Commerce</a>
           </Link>
         </li>
-        <li>
+        <li className='text-orange-500'>
           <Link href="/Inward">
             <a>Inward</a>
           </Link>
