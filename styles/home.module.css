@@ -274,6 +274,11 @@
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  transition: all 0.3s;
+}
+
+.dropdown_item_profile:hover {
+  background-color: #eee;
 }
 
 /* .user_active {
