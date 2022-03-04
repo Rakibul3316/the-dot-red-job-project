@@ -10,7 +10,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import ListIcon from '@mui/icons-material/List';
 import LogoutIcon from '@mui/icons-material/Logout';
 import Image from 'next/image';
-import { style } from '@mui/system';
+import Dashboard_Content from './Dashboard_Content';
 
 const Dashboard = () => {
 
@@ -205,7 +205,9 @@ const Dashboard = () => {
                         </li>
                     </ul>
                 </nav>
+                <Dashboard_Content />
             </div >
+
         </div >
     )
 }
