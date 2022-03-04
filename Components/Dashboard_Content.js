@@ -1,5 +1,7 @@
 import React from 'react'
 import { cardData } from '../Assets/dummy-data/card-data';
+import LineChart from './LineChart';
+import PieChart from './PieChart';
 const Dashboard_Content = () => {
 
     return (
@@ -30,6 +32,21 @@ const Dashboard_Content = () => {
                         </div>
                     ))
                 }
+            </div>
+
+            <div className="row">
+                <div className="col_half">
+                    <div className="pie_card">
+                        <h1 className='text-center text-2xl mb-4'>Pic Chart</h1>
+                        <PieChart />
+                    </div>
+                </div>
+                <div className="col_half">
+                    <div className="line_card">
+                        <h1 className='text-center text-2xl mb-4'>Line Chart</h1>
+                        <LineChart />
+                    </div>
+                </div>
             </div>
         </div>
     )
