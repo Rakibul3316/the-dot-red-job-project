@@ -281,16 +281,6 @@
   background-color: #eee;
 }
 
-/* .user_active {
-  position: absolute;
-  bottom: 50px;
-  right: 50px;
-  width: 1rem;
-  height: 1rem;
-  color: #3a3b45;
-  z-index: 9999999;
-} */
-
 .topbar_divider {
   width: 0;
   border-right: 1px solid #e3e6f0;
