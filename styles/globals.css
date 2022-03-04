@@ -1,10 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-['Poppins'];
+    @apply font-['Roboto'];
+    height: 100%;
+    background-color: #fff;
+    color: #757575;
+  }
+
+  .wrapper {
+    display: flex;
+  }
+
+  .content_wrapper {
+    background-color: #fafdfb;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .content {
+    flex: 1 0 auto;
+  }
+
+  .text-gray-400 {
+    color: #d1d3e2;
   }
 }
