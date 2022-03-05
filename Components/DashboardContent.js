@@ -3,6 +3,7 @@ import { cardData } from '../Assets/dummy-data/card-data';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import styles from '../styles/dashboardContent.module.css';
+import Fade from 'react-reveal/Fade';
 
 const DashboardContent = () => {
 
@@ -14,23 +15,25 @@ const DashboardContent = () => {
                 {
                     cardData.map((card, index) => (
                         <div key={index} className={styles.col}>
-                            <div className={styles.card}>
-                                <div className={styles.card_body}>
-                                    <div className={styles.row}>
-                                        <div className={styles.card_content}>
-                                            <div className={styles.card_title}>{card.title}</div>
-                                            <div className={styles.card_amount}>{card.amount}</div>
-                                            <div className={styles.card_increment}>
-                                                {card.incremtntIcon}<span>{card.increment}</span>
-                                                <span>{card.smallText}</span>
+                            <Fade bottom>
+                                <div className={styles.card}>
+                                    <div className={styles.card_body}>
+                                        <div className={styles.row}>
+                                            <div className={styles.card_content}>
+                                                <div className={styles.card_title}>{card.title}</div>
+                                                <div className={styles.card_amount}>{card.amount}</div>
+                                                <div className={styles.card_increment}>
+                                                    {card.incremtntIcon}<span>{card.increment}</span>
+                                                    <span>{card.smallText}</span>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div className={styles.card_icon}>
-                                            {card.Icon}
+                                            <div className={styles.card_icon}>
+                                                {card.Icon}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </Fade>
                         </div>
                     ))
                 }
