@@ -10,7 +10,7 @@ const Sidebar = () => {
     return (
         <div className={styles.sidebar}>
             <ul className={styles.navbar}>
-                <Link href='#'>
+                <Link href='/'>
                     <a className={styles.sidebar_brand}>
                         <div className={styles.sidebar_icon}>
                             <Image src="/logo.png" width="40" height="40" alt='Brand Logo' />
