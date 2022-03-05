@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../styles/home.module.css';
+import Image from 'next/image'
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
@@ -9,8 +9,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ListIcon from '@mui/icons-material/List';
 import LogoutIcon from '@mui/icons-material/Logout';
-import Image from 'next/image';
 import Dashboard_Content from './Dashboard_Content';
+import styles from '../styles/home.module.css';
 
 const Dashboard = () => {
 
@@ -49,8 +49,8 @@ const Dashboard = () => {
 
 
     return (
-        <div className='content_wrapper flex flex-col'>
-            <div className="content">
+        <div className={styles.content_wrapper}>
+            <div className={styles.content}>
                 <nav className={styles.top_nav}>
                     <button className={styles.sidebar_toggle}>
                         <MenuIcon />
@@ -87,36 +87,36 @@ const Dashboard = () => {
                                         <div className={styles.hide_noti}>
                                             <h6 className={styles.dropdown_header}>Alearts Center</h6>
                                             <a className={styles.dropdown_item} href="#">
-                                                <div className='mr-4'>
+                                                <div className={styles.mr_4}>
                                                     <div className={styles.icon_cricle}>
                                                         <FormatListBulletedIcon />
                                                     </div>
                                                 </div>
-                                                <div className='w-64'>
+                                                <div className={styles.w_64}>
                                                     <div className={styles.small_text}>December 12, 2019</div>
                                                     <span className={styles.message}>A new monthly report is ready to download!</span>
                                                 </div>
                                             </a>
 
                                             <a className={styles.dropdown_item} href="#">
-                                                <div className='mr-4'>
+                                                <div className={styles.mr_4}>
                                                     <div className={styles.icon_cricle}>
                                                         <FormatListBulletedIcon />
                                                     </div>
                                                 </div>
-                                                <div className='w-64'>
+                                                <div className={styles.w_64}>
                                                     <div className={styles.small_text}>December 12, 2019</div>
                                                     <span className={styles.message}>A new monthly report is ready to download!</span>
                                                 </div>
                                             </a>
 
                                             <a className={styles.dropdown_item} href="#">
-                                                <div className='mr-4'>
+                                                <div className={styles.mr_4}>
                                                     <div className={styles.icon_cricle}>
                                                         <FormatListBulletedIcon />
                                                     </div>
                                                 </div>
-                                                <div className='w-64'>
+                                                <div className={styles.w_64}>
                                                     <div className={styles.small_text}>December 12, 2019</div>
                                                     <span className={styles.message}>A new monthly report is ready to download!</span>
                                                 </div>
@@ -142,10 +142,10 @@ const Dashboard = () => {
                                             <h6 className={styles.dropdown_header}>MESSAGE CENTER</h6>
                                             <a className={styles.dropdown_item} href="#">
                                                 <div className={styles.dropdown_list_img}>
-                                                    <img className={styles.round_img} src='/boy.png' alt='person-image' />
+                                                    <Image width='50' height='50' className={styles.round_img} src='/boy.png' alt='person-image' />
                                                     <span className={styles.user_active}></span>
                                                 </div>
-                                                <div className='w-64'>
+                                                <div className={styles.w_64}>
                                                     <div className={styles.message}>Hi there! I am wondering if you can help me with a
                                                         problem I have been having.</div>
                                                     <span className={styles.small_text}>Udin Cilok · 58m</span>
@@ -154,9 +154,9 @@ const Dashboard = () => {
 
                                             <a className={styles.dropdown_item} href="#">
                                                 <div className={styles.dropdown_list_img}>
-                                                    <img className={styles.round_img} src='/girl.png' alt='person-image' />
+                                                    <Image width='50' height='50' className={styles.round_img} src='/girl.png' alt='person-image' />
                                                 </div>
-                                                <div className='w-64'>
+                                                <div className={styles.w_64}>
                                                     <div className={styles.message}>Hi there! I am wondering if you can help me with a
                                                         problem I have been having.</div>
                                                     <span className={styles.small_text}>Udin Cilok · 58m</span>
@@ -179,7 +179,7 @@ const Dashboard = () => {
                         <div className={styles.topbar_divider}></div>
                         <li className={styles.profile}>
                             <button onClick={() => handleProfile()} className={styles.top_search}>
-                                <img className={styles.img_porfile} src="/man.png" alt="" />
+                                <Image width='35' height='35' className={styles.img_porfile} src="/man.png" alt="" />
                                 <span className={styles.profile_text}>Rakibul Islam</span>
                             </button>
 
