@@ -1,0 +1,42 @@
+.px_5 {
+  @apply px-5 pt-4;
+  background-color: #effffd;
+}
+
+.dashboard_title {
+  @apply text-3xl font-normal mb-7;
+}
+
+.inward,
+.inward_order {
+  @apply text-xl;
+  padding: 15px;
+  background-color: #7c99ac;
+  color: #effffd;
+  border-radius: 5px;
+}
+
+.inward_order {
+  @apply mb-4;
+}
+
+.inward_container {
+  display: flex;
+}
+
+.inward_left_info,
+.inward_right_info {
+  @apply py-5 px-5;
+  width: 50%;
+}
+
+.inward_left_info h6,
+.inward_right_info h6 {
+  @apply mb-2 font-medium;
+}
+
+.inward_left_info h6 span,
+.inward_right_info h6 span {
+  font-weight: 400;
+  font-size: 15px;
+}

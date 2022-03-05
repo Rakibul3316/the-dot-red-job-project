@@ -1,5 +1,6 @@
 .px_5 {
-  @apply px-5;
+  @apply px-5 pt-4;
+  background-color: #effffd;
 }
 
 .dashboard_title {
@@ -14,11 +15,15 @@
 }
 
 .table_container {
-  @apply p-5 h-screen bg-gray-100 w-screen mx-3;
+  @apply p-5 h-screen w-screen mx-3;
+  background-color: #b8fff9;
+  border-radius: 3px;
 }
 
 .table {
   @apply w-full;
+  border-radius: 3px;
+  height: 400px;
 }
 
 .table_head {
@@ -31,6 +36,12 @@
 
 .table_row_odd {
   @apply bg-white;
+  border-top: 1px solid #b1d0e0;
+  transition: all 0.3s;
+}
+
+.table_row_odd:hover {
+  background-color: #b1d0e0;
 }
 
 .table_row_even {
@@ -46,7 +57,7 @@
 }
 
 .table_data span {
-  @apply p-1.5 text-xs font-medium uppercase tracking-wide rounded-lg;
+  @apply p-1.5 text-xs font-medium text-green-800 bg-green-200 uppercase tracking-wide rounded-lg;
 }
 
 .search_order {
@@ -59,7 +70,7 @@
   width: 240px;
   border-radius: 3px;
   padding: 10px;
-  border: 1px solid #6777ef;
+  border: 1px solid #406882;
 }
 
 .order_search_input:focus {
@@ -105,10 +116,17 @@
   width: 100%;
 }
 
+.submit_btn_area {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .submit_btn {
-  background-color: #4c60da;
+  background-color: #85f4ff;
   width: 93px;
   padding: 5px;
   border-radius: 5px;
-  color: #fff;
+  color: #406882;
 }

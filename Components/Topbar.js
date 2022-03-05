@@ -56,9 +56,6 @@ const Topbar = (props) => {
 
     return (
         <nav className={styles.top_nav}>
-            <button className={styles.sidebar_toggle}>
-                <MenuIcon />
-            </button>
             <ul className={styles.top_navbar}>
 
                 <li>

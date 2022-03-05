@@ -1,10 +1,15 @@
 .sidebar {
   min-height: 100vh;
   width: 14rem !important;
-  background-color: #ffffff !important;
-  -webkit-box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
-  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+  background: rgb(184, 255, 249);
+  background: linear-gradient(
+    0deg,
+    rgba(184, 255, 249, 1) 31%,
+    rgba(66, 194, 255, 1) 100%
+  );
+  box-shadow: 0 0.15rem 0.75rem 0 rgba(58, 59, 69, 0.15) !important;
   z-index: 0;
+  color: #406882;
 }
 
 .navbar {
@@ -31,7 +36,6 @@
   letter-spacing: 0.05rem;
   z-index: 1;
   color: #fafafa;
-  background-color: #4c60da;
 }
 
 .sidebar_icon img {
@@ -40,6 +44,7 @@
 
 .sidebar_title {
   @apply mx-4;
+  color: #406882;
 }
 
 .my_4 {
@@ -51,7 +56,7 @@
 }
 
 .sidebar_divider_my_4 {
-  border-top: 1px solid #eaecf4;
+  border-top: 1px solid #effffd;
   margin-bottom: 1rem;
 }
 
@@ -86,7 +91,7 @@
   font-weight: 800;
   font-size: 0.7rem;
   letter-spacing: 0.13rem;
-  color: #b7b9cc;
+  color: #effffd;
 }
 
 .order_link span {
@@ -99,6 +104,5 @@
 }
 
 .nav_link:hover {
-  color: #6e707e;
-  background-color: #eee;
+  background-color: #effffd;
 }
