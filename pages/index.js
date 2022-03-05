@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Sidebar from '../Components/Sidebar';
 import Dashboard from '../Components/Dashboard';
 import styles from '../styles/index.module.css';
+import DashboardContent from '../Components/DashboardContent';
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </Head>
 
       <Sidebar />
-      <Dashboard />
+      <Dashboard>
+        <DashboardContent />
+      </Dashboard>
     </div>
   )
 }

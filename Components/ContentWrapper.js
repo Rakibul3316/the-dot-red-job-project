@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { useRouter } from 'next/router'
+import React from 'react'
 import styles from '../styles/home.module.css';
 import Topbar from './Topbar';
 import DashboardContent from './DashboardContent';
 
-const Dashboard = (props) => {
 
+const ContentWrapper = (props) => {
     return (
         <div className={styles.content_wrapper}>
             <div className={styles.content}>
@@ -16,4 +15,4 @@ const Dashboard = (props) => {
     )
 }
 
-export default Dashboard;
+export default ContentWrapper;

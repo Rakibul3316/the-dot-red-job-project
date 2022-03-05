@@ -3,8 +3,8 @@ import { cardData } from '../Assets/dummy-data/card-data';
 import LineChart from './LineChart';
 import PieChart from './PieChart';
 import styles from '../styles/dashboardContent.module.css';
-import { style } from '@mui/system';
-const Dashboard_Content = () => {
+
+const DashboardContent = () => {
 
     return (
         <div className={styles.px_5}>
@@ -56,4 +56,4 @@ const Dashboard_Content = () => {
 
 
 
-export default Dashboard_Content;
+export default DashboardContent;
